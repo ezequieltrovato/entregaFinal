@@ -1,0 +1,223 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  box-sizing: border-box;
+  }
+  body{
+      display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "section"
+    "footer";
+  }
+  header{
+    grid-area: header;
+  }
+  main{
+    grid-area: main;
+  }
+  section{
+    grid-area: section;
+    padding: 30px;
+    
+  }
+  footer{
+    grid-area: footer;
+  }
+  
+main section{
+  font-family: 'Poppins'sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: normal;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  color: black ;
+}
+
+.portada {
+  margin: 10px 200px ;
+  padding: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  position:relative
+}
+.portada img{
+  position: absolute;
+  transition: transform 0.5s;
+}
+.portada:hover img{
+  transform: translateX(50px) rotate(10deg);
+}
+
+:root{
+  --color: #17a2ff;
+}
+button{
+  border: 3px solid;
+  margin: 20px 40px;
+  padding: 10px 20px;
+  font-family: 'Poppins',sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+button:hover{
+  
+  text-decoration: none;
+  font-family:'Poppins'sans-serif;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--color);
+  border-color: var(--color);
+}
+button span:nth-child(n){
+  position: absolute;
+  width: 100px;
+
+}
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+header nav{
+  float: center;
+  background: aqua;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  } 
+  header nav ul li{
+    font-family: 'Poppins',sans-serif;
+    margin-left: 70px;
+    padding: 25px 0 ;
+    float: left;
+    position: relative;
+    list-style: none;
+  }
+  header nav ul li a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  header nav ul li a::before{
+    width: 0%;
+    background-color: black;
+    height: 5px;
+    top: 0%;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: width 0.3s;
+  }
+  header nav ul li a:hover::before{
+    width: 100%;
+  }
+  section p{
+    font-family: 'Poppins',sans-serif;
+    }
+  section ol li{
+    font-family: 'Poppins',sans-serif;
+    list-style-type: none;
+  }
+.video{
+  margin: 1px 380px;
+  }
+.section2{
+  margin: 2px 2px;
+  padding: 100px 1px;
+}
+.formulario{
+  background-color: blanchedalmond;
+  margin: 10px 390px;
+  width: 80%;
+  max-width: 500px;
+  padding: 15px 15px;
+  border-radius: 30px;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+  }
+.label{
+  background-color: blanchedalmond;
+  top: 0%;
+  }
+.input{
+  background: blanchedalmond;
+  width: 100%;
+  color: black;
+  font-size: 1rem;
+  padding: .6em .1em;
+  border: none;
+  }
+  .h3{
+    background-color: blanchedalmond;
+    }
+  .mapa{
+    padding: 40px 280px;
+  }
+  .h1{
+    padding: 80px 210px;
+    margin: 10px 210px;
+  }
+  textarea{
+    padding-left: 100px;
+  }
+.ul li{
+  list-style: none;
+  font-weight: bold;
+  list-style-type: none;
+}
+.li{
+  padding: 10px 210px;
+  font-family:'Poppins',sans-serif;
+  font-size: 150%;
+  margin: 10px 20px;
+  list-style-type: none;
+}
+.img{
+  border-radius: 8px;
+  width: 40%;
+  margin: 5px 400px;
+}
+.imagenContenedor{
+  display: grid;
+  margin: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 500px;
+  grid-gap: 40px;
+  grid-auto-flow: dense;
+  padding: 40px;
+}
+.gridItem{
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.gridItem:hover{ 
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px){
+  .imagenContenedor{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 780px){
+  .imagenContenedor{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
