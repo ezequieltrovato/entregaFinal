@@ -44,127 +44,66 @@ main section{
 }
 
 .portada {
-  margin: 10px 200px ;
-  padding: 50px;
+  padding: 60px 100px;
   max-width: 100%;
   max-height: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  position:relative
+  position:relative;
 }
-.portada img{
-  position: absolute;
-  transition: transform 0.5s;
+@media screen (max-width: 480px){
+  .portada{
+    margin:10px;
+    max-width:50%;
+    
+  }
 }
-.portada:hover img{
-  transform: translateX(50px) rotate(10deg);
-}
-:root{
-  --color: #17a2ff;
-}
-button{
-  border: 3px solid;
-  margin: 20px ;
-  padding: 10px 20px;
-  font-family: 'Poppins',sans-serif;
-  font-style: italic;
-  font-weight: bold;
-}
-button:hover{
-  
-  text-decoration: none;
-  font-family:'Poppins'sans-serif;
-  background-color: white;
-  cursor: pointer;
-  box-shadow: 0 0 20px var(--color);
-  border-color: var(--color);
-}
-button span:nth-child(n){
-  position: absolute;
-  width: 100px;
+.title{
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px;
 
 }
-.reciclado{
-:root{
-  --color: #17a2ff;
-}
-button{
-  border: 3px solid;
-  margin: 20px 40px;
-  padding: 10px 20px;
+.paragraph{
   font-family: 'Poppins',sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  font-size: 1,5rem;
+  margin: 20px;
 }
-button:hover{
-  
-  text-decoration: none;
-  font-family:'Poppins'sans-serif;
-  background-color: white;
-  cursor: pointer;
-  box-shadow: 0 0 20px var(--color);
-  border-color: var(--color);
-}
-button span:nth-child(n){
-  position: absolute;
-  width: 100px;
-
-}
-.container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100%;
+.container{
+  max-width: 700px;
   width: 100%;
+  margin: 0 auto;
+  font-family: 'Poppins',sans-serif;
+  padding: 10px 20px;
+  margin-top: 20px;
+
 }
-header nav{
-  float: center;
-  background: aqua;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  } 
-  header nav ul li{
-    font-family: 'Poppins',sans-serif;
-    margin-left: 70px;
-    padding: 25px 0 ;
-    float: left;
-    position: relative;
-    list-style: none;
-  }
-  header nav ul li a{
-    color: black;
-    font-weight: bolder;
-    text-decoration: none;
-  }
-  header nav ul li a::before{
-    width: 0%;
-    background-color: black;
-    height: 5px;
-    top: 0%;
-    position: absolute;
-    display: block;
-    content: "";
-    transition: width 0.3s;
-  }
-  header nav ul li a:hover::before{
-    width: 100%;
-  }
+
+.section ol li{
+  font-size: 1.2rem;
+  font-family: 'Poppins',sans-serif;
+  list-style-type:none;
+  text-align: center;
+  
+  
 }
-  section p{
+.servicios{
+  background-color:aqua;
+  text-decoration: none;
+}
+  ol li{
+    font-size: 2rem;
     font-family: 'Poppins',sans-serif;
-    }
-  section ol li{
-    font-family: 'Poppins',sans-serif;
-    list-style-type: none;
   }
 .video{
   margin: 1px 380px;
+  
+  
   }
 .section2{
-  margin: 2px 2px;
-  padding: 100px 1px;
+  margin: 2px;
+  padding: 20px 1px;
 }
 .formulario{
   background-color: blanchedalmond;
@@ -193,13 +132,44 @@ header nav{
     }
   .mapa{
     padding: 40px 280px;
+    width: 100%;
   }
   .h1{
     padding: 80px 210px;
     margin: 10px 210px;
   }
   textarea{
-    padding-left: 100px;
+    padding-left: 7px;
+    margin: 30px;
+    border-radius: 10px;
+  }
+  .button{
+    margin: 30px;
+    border: 3px solid;
+    padding: 5px 20px;
+    font-family: 'Poppins',sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 15px;
+    
+  }
+  :root{
+    --color: #17a2ff;}
+  
+  .button:hover{
+    
+    text-decoration: none;
+    font-family:'Poppins'sans-serif;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+  }
+  .button span:nth-child(n){
+    
+    position: absolute;
+    width: 100px;
+  
   }
 .ul li{
   list-style: none;
@@ -247,4 +217,13 @@ header nav{
   .imagenContenedor{
     grid-template-columns: repeat(4, 1fr);
   }
+}
+@media (max-width: 480px){
+  .mapa{
+    width:400px;
+    height: 300px;  
+    }
+}
+.icono{
+  width: 6%;
 }
