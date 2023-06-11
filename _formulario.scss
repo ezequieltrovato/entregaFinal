@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+$letra:'Poppins'sans-serif;
+$colorBottom: #17a2ff;
+$fondoFormulario: blanchedalmond;
+.formulario{
+    background-color: $fondoFormulario;
+    margin: calc(50vh - 220px) auto;
+    width: 50%;
+    max-width: calc(100vw - 40px);
+    padding: 15px 15px;
+    border-radius: 30px;
+    font-family: $letra ;
+    text-align: center;
+    box-shadow: 0 0 40px -10px black;
+    position: relative;
+    box-sizing: border-box;
+    }
+    .label{
+    background-color: $fondoFormulario;
+    top: 0%;
+    }
+    .input{
+    background: $fondoFormulario;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+    padding: 10px;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    font-family: $letra;
+    transition: all .3s;
+        &:focus{
+            border-bottom: 2px solid lightblue;
+        }
+    }
+    textarea{
+        padding-left: 7px;
+        margin: 30px;
+        border-radius: 10px;
+        }
+    .button{
+        margin: 30px;
+        border: 3px solid;
+        padding: 5px 20px;
+        font-style: italic;
+        font-weight: bold;
+        border-radius: 15px;
+            &:hover{
+                text-decoration: none;
+                font-family: $letra;
+                background-color: white;
+                cursor: pointer;
+                box-shadow: 0 0 20px $colorBottom;
+                border-color: $colorBottom;
+            }
+            span{
+                &:nth-child(n){
+                    position: absolute;
+                    width: 100px; 
+                }
+
+            }
+        }
+    
+   

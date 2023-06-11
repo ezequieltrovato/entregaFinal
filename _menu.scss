@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+$letra:'Poppins'sans-serif;
+body{
+    display: grid;
+    font-family: $letra;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "section"
+    "footer";
+    }
+    header{
+    grid-area: header;
+    }
+    main{
+    grid-area: main;
+    }
+    section{
+    grid-area: section;
+    padding: 30px;
+    }
+    footer{
+    grid-area: footer;
+    }
