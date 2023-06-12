@@ -36,9 +36,14 @@ $fondoFormulario: blanchedalmond;
         }
     }
     textarea{
-        padding-left: 7px;
-        margin: 30px;
+        width: 100%;
+        padding-left: 100dvh;
+        margin: 10px auto;
         border-radius: 10px;
+        overflow: hidden;
+        resize: none;
+        outline: none;
+        font-size: 1.2rem;
         }
     .button{
         margin: 30px;
