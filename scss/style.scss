@@ -3,7 +3,7 @@
 @import "portada";
 @import "formulario";
 $colorFondo: aqua;
-$letra:'Poppins'sans-serif;
+$letra:"Poppins",sans-serif;
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ $letra:'Poppins'sans-serif;
             margin-top: 20px;
         }
     section ol li{
-                font-size: 1.2rem
+                font-size: 1.2rem;
                 font-family: $letra;
                 list-style-type:none;
                 text-align: center;     
