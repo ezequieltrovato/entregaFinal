@@ -24,6 +24,42 @@ footer {
   grid-area: footer;
 }
 
+main section {
+  font-family: "Poppins" sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: normal;
+  word-spacing: 5px;
+  color: black;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px;
+}
+
+.paragraph {
+  font-family: "Poppins" sans-serif;
+  font-size: 1, 5rem;
+  margin: 20px;
+}
+
+section ol li {
+  font-size: 1.2rem;
+  font-family: "Poppins" sans-serif;
+  list-style-type: none;
+  text-align: center;
+}
+
+ol li {
+  font-size: 2rem;
+  font-family: "Poppins" sans-serif;
+}
+
 .portada {
   padding: 60px 100px;
   max-width: 100%;
@@ -111,7 +147,7 @@ textarea {
 * {
   margin: 0;
   padding: 0;
-  background-color: aqua;
+  background: aqua;
   box-sizing: border-box;
 }
 
@@ -203,8 +239,20 @@ ol li {
   margin: 5px 400px;
 }
 
-.icono {
-  width: 6%;
+ol li {
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {
+    top: -150px;
+  }
+  to {
+    top: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

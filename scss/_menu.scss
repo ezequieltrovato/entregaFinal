@@ -23,3 +23,36 @@ body{
     footer{
     grid-area: footer;
     }
+    main {
+        section{
+            font-family: $letra;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: 5px;
+            color: black ;
+        }   
+    }
+    .title{
+        text-align: center;
+        font-size: 3rem;
+        margin: 40px;
+        }
+    .paragraph{
+        font-family: $letra;
+        font-size: 1,5rem;
+        margin: 20px;
+        }
+        section ol li{
+            font-size: 1.2rem;
+            font-family: $letra;
+            list-style-type:none;
+            text-align: center;     
+    }
+    ol li{
+        font-size: 2rem;
+        font-family: $letra;
+        }

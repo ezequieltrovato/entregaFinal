@@ -14,19 +14,19 @@
 <body>
     <header><!--barra de navegacion-->
         <div class="containerNavbar">
-            <nav class="navbar navbar-expand-md border-3 border-bottom border-primary">
+            <nav class="navbar navbar-expand-md ">
                 <div class="containerNavbar">
-                    <a href="../index.html"><img src="../img/fondo/la torre hostel.svg.jpg" alt="fondo" class="icono"></a>
+                    <a class="navbar-brand"  href="../index.html"><img src="../img/fondo/la torre hostel.svg.jpg" alt="Boostrap" width="5%" ></a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNav">
                     <span class="navbar-toggler-icon">
                     </span>
                     </button>
                     <div id="MenuNav" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-3">
+                        <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
                                 <a href="../index.html" class="nav-link fw-bolder">MENU</a>
                             </li>
-                            <li class="navbar-nav ms-2" >
+                            <li class="nav-item" >
                                 <a href="./servicios.html" class="nav-link fw-bolder">SERVICIOS</a>
                             </li>
                             <li class="nav-item">
@@ -48,7 +48,7 @@
         </div>
     </header>
 <main> <!--formulario de reserva-->
-    <h1 class="h1"> Reservar completando el formulario</h1>
+    <h1 class="title"> Reservar completando el formulario</h1>
         <form class="formulario">
             <label for="name" class="label">NOMBRE:</label>
             <input type="text" id="name" name="name" class="input">
@@ -68,7 +68,7 @@
             <input type="radio" name="HABITACION" id="HABITACION" class="input">
             <h3 class="h3">COMENTARIO</h3>
             <!--<label for="text" class="label"></label>-->
-            <textarea autofocus name="text" cols="30" rows="6"></textarea>
+            <textarea name="text" cols="30" rows="6"></textarea>
             <button type="submit" value="submit" class="button">ENVIAR</button>
             <h3 class="h3"> A LA BREVEDAD LE ESTAREMOS ENVIANDO UNA RESPUESTA</H3> 
         </form>

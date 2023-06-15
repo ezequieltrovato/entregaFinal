@@ -7,10 +7,9 @@ $letra:"Poppins",sans-serif;
 *{
     margin: 0;
     padding: 0;
-    background-color: $colorFondo;
+    background: $colorFondo;
     box-sizing: border-box;
     }
-    
     main {
         section{
             font-family: $letra;
@@ -90,6 +89,18 @@ $letra:"Poppins",sans-serif;
         width: 40%;
         margin: 5px 400px;
         }
-.icono{
-        width: 6%;
+
+
+    ol{
+        li{
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;  
+        animation-fill-mode: forwards;
+            }
         }
+    
+@keyframes example{
+            from{top: -150px;}
+            to{top: 0px;}
+            }
